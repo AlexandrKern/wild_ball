@@ -8,6 +8,7 @@ public class AnimationController : MonoBehaviour
     public Animation firstDoorAnimation;
     public Animation secondDoorAnimation;
     public Animation acceleratorAnimation;
+    public Animation wildBallDeathAnimation;
 
     public void PlayAnimation(Animation curentAnimation)
     {

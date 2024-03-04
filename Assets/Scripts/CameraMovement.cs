@@ -13,6 +13,11 @@ public class CameraMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+       PositionSelection();
+    }
+
+    private void PositionSelection()
+    {
         transform.position = _offSet + _transwormWildBall.position;
     }
 }

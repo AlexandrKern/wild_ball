@@ -9,6 +9,7 @@ TagManager:
   - ButtonOpeningSecondDoor
   - ButtonOpeningAccelerator
   - Accelerator
+  - Coin
   layers:
   - Default
   - TransparentFX

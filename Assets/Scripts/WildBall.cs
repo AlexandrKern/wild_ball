@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -8,7 +9,7 @@ public class WildBall : MonoBehaviour
 {
     [SerializeField] private GameObject _finalPanel;
     [SerializeField] private Button _pauseButton;
-
+    [SerializeField] private ParticleSystem _deathEffect;
 
     private AnimationController _animationcontroller;
     private Rigidbody _wildBallRigitbody;
@@ -17,6 +18,7 @@ public class WildBall : MonoBehaviour
 
     private void Awake()
     {
+
         _speedWall = 10;
         _wildBallRigitbody = GetComponent<Rigidbody>();
         _animationcontroller = GetComponent<AnimationController>();
@@ -26,13 +28,14 @@ public class WildBall : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         BounceBack(other, "Hit");
-        Death(other, "Respawn");
+        Death(other, "Respawn",_animationcontroller.wildBallDeathAnimation);
         Finishit(other, "Finish");
+        CollectCoin(other, "Coin");
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        Death(collision, "Respawn");
+        Death(collision, "Respawn", _animationcontroller.wildBallDeathAnimation);
         ButtonPressed(_animationcontroller.firstDoorAnimation,_animationcontroller.firstButtonAnimation, collision, "ButtonOpeningFirstDoor");
         ButtonPressed(_animationcontroller.secondDoorAnimation, _animationcontroller.secondButtonAnimation, collision, "ButtonOpeningSecondDoor");
         ButtonPressed(_animationcontroller.acceleratorAnimation, _animationcontroller.acceleratorButtonAnimation, collision, "ButtonOpeningAccelerator");
@@ -54,19 +57,25 @@ public class WildBall : MonoBehaviour
         }
     }
 
-    private void Death(Collision collision,string objectName)
+    private void Death(Collision collision,string objectName,Animation death)
     {
         if (collision.gameObject.CompareTag(objectName))
         {
-            LevelController.ReloadScene();
+            _deathEffect.transform.position = transform.position;
+            _deathEffect.Play();
+            death.Play();
+            StartCoroutine(TimerLoadScene());
         }
     }
 
-    private void Death(Collider other, string objectName)
+    private void Death(Collider other, string objectName, Animation death)
     {
         if (other.gameObject.CompareTag(objectName))
         {
-            LevelController.ReloadScene();
+            _deathEffect.transform.position = transform.position;
+            _deathEffect.Play();
+            death.Play();
+            StartCoroutine(TimerLoadScene());
         }
     }
 
@@ -104,6 +113,22 @@ public class WildBall : MonoBehaviour
         {
             _wildBallRigitbody.AddForce((collision.transform.position - transform.position).normalized * 30,ForceMode.Impulse);
         }
+    }
+
+    private void CollectCoin(Collider other,string coinName)
+    {
+        if (other.CompareTag(coinName))
+        {
+            other.GetComponent<ParticleSystem>().Play();
+            other.GetComponent<Animator>().SetTrigger("CoinCollect");
+        }
+    }
+
+    private IEnumerator TimerLoadScene()
+    {
+        yield return new WaitForSeconds(1);
+
+        LevelController.ReloadScene();
     }
 }
 

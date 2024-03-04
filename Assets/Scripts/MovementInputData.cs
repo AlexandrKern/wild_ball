@@ -18,14 +18,20 @@ namespace Scripts
 
         void Update()
         {
+           DataInitialization();
+        }
+
+        private void FixedUpdate()
+        {
+            _wildBall.BallMovement(_movement);
+        }
+
+        private void DataInitialization()
+        {
             _horizontal = Input.GetAxis(GlobalString.HORIZONTAL_AXIS);
             _vertical = Input.GetAxis(GlobalString.VERTICAL_AXIS);
 
             _movement = new Vector3(_horizontal, 0, _vertical);
-        }
-        private void FixedUpdate()
-        {
-            _wildBall.BallMovement(_movement);
         }
     }
 }
