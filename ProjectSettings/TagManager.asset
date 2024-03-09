@@ -10,6 +10,7 @@ TagManager:
   - ButtonOpeningAccelerator
   - Accelerator
   - Coin
+  - Teleport
   layers:
   - Default
   - TransparentFX

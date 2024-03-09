@@ -31,6 +31,7 @@ public class WildBall : MonoBehaviour
         Death(other, "Respawn",_animationcontroller.wildBallDeathAnimation);
         Finishit(other, "Finish");
         CollectCoin(other, "Coin");
+        Teleport(other, "Teleport");
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -81,14 +82,15 @@ public class WildBall : MonoBehaviour
 
     private void Finishit(Collider other,string finishName)
     {
-        if (other.CompareTag(finishName) && SceneManager.GetActiveScene().buildIndex <= 2)
+        if (other.CompareTag(finishName) && SceneManager.GetActiveScene().buildIndex <= 3)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
-        if (other.CompareTag(finishName) && SceneManager.GetActiveScene().buildIndex >= 3)
+        if (other.CompareTag(finishName) && SceneManager.GetActiveScene().buildIndex >= 4)
         {
             gameObject.SetActive(false);
+            other.GetComponent<ParticleSystem>().Play();
             MenuController. FinalPanel(_finalPanel);
             MenuController.DisableButton(_pauseButton);
         }
@@ -129,6 +131,14 @@ public class WildBall : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         LevelController.ReloadScene();
+    }
+
+    private void Teleport(Collider other, string teleportName)
+    {
+        if (other.CompareTag(teleportName))
+        {
+            transform.position = new Vector3(-34.7700005f, 1.88f, 128.679993f);
+        }
     }
 }
 

@@ -1,12 +1,70 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{96C494E4-F6BD-61B6-E25A-90C0D0A8EF49}|Assembly-CSharp.csproj|c:\\users\\admin\\desktop\\\u0443\u0447\u0435\u0431\u0430\\skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\unity\\\u0440\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\assets\\scripts\\wildball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C494E4-F6BD-61B6-E25A-90C0D0A8EF49}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\wildball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C494E4-F6BD-61B6-E25A-90C0D0A8EF49}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\assets\\scripts\\pausecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C494E4-F6BD-61B6-E25A-90C0D0A8EF49}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{96C494E4-F6BD-61B6-E25A-90C0D0A8EF49}|Assembly-CSharp.csproj|C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{96C494E4-F6BD-61B6-E25A-90C0D0A8EF49}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PauseController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\Assets\\Scripts\\PauseController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\Assets\\Scripts\\PauseController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T18:21:56.432Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WildBall.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\Assets\\Scripts\\WildBall.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\WildBall.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\Assets\\Scripts\\WildBall.cs",
+              "RelativeToolTip": "Assets\\Scripts\\WildBall.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAEwFkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-06T16:15:24.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\Assets\\Scripts\\MenuController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MenuController.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\Skillbox \u043F\u0440\u043E\u0435\u043A\u0442\u044B\\Unity\\\u0420\u0430\u0437\u0440\u0430\u0431\u043E\u0442\u0447\u0438\u043A \u0438\u0433\u0440 \u043D\u0430 Unity \u0441 \u043D\u0443\u043B\u044F\\wild_ball\\Assets\\Scripts\\MenuController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MenuController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-05T17:36:09.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

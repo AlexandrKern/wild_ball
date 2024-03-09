@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 664663909591082848}
   - component: {fileID: 5630993747842525947}
   - component: {fileID: 1726376980794824810}
+  - component: {fileID: 2406610926686743874}
   m_Layer: 0
   m_Name: WildBall
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 112566751166154457}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.36, y: 1.04, z: -65.835}
+  m_LocalPosition: {x: -7.32, y: 0.93, z: 6.83}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -180,6 +181,25 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &2406610926686743874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112566751166154457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0d47fa1769fe245aae87e38fcafdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firstButtonAnimation: {fileID: 0}
+  secondButtonAnimation: {fileID: 0}
+  acceleratorButtonAnimation: {fileID: 0}
+  firstDoorAnimation: {fileID: 0}
+  secondDoorAnimation: {fileID: 0}
+  acceleratorAnimation: {fileID: 0}
+  wildBallDeathAnimation: {fileID: 1726376980794824810}
 --- !u!1 &7474506218968905919
 GameObject:
   m_ObjectHideFlags: 0
